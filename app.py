@@ -30,11 +30,11 @@ if uploaded_file:
         # pores = score_pores(regions['right_cheek'])
         dark_circle = score_dark_circle(regions['under_eyes'])
 
-        st.write(f"🌺 **Redness:** {redness}/10")
-        st.write(f"✨ **Shine:** {shine}/10")
+        st.write(f" **Redness:** {redness}/10")
+        st.write(f" **Shine:** {shine}/10")
         # st.write(f"🌾 **Texture:** {texture}/10")
-        # st.write(f"🧊 **Pores:** {pores}/10")
-        st.write(f"🫥 **Dark Circles:** {dark_circle}/10")
+        # st.write(f" **Pores:** {pores}/10")
+        st.write(f" **Dark Circles:** {dark_circle}/10")
                 
                 # Texture
         left_texture = score_texture(regions['left_cheek'])
@@ -47,11 +47,11 @@ if uploaded_file:
         # Display side-by-side
         col1, col2 = st.columns(2)
         with col1:
-            st.subheader("👈 Left Cheek")
-            st.write(f"🌾 **Texture:** {left_texture}/10")
-            st.write(f"🧊 **Pores:** {left_pores}/10")
+            st.subheader(" Left Cheek")
+            st.write(f" **Texture:** {left_texture}/10")
+            st.write(f" **Pores:** {left_pores}/10")
         with col2:
-            st.subheader("👉 Right Cheek")
-            st.write(f"🌾 **Texture:** {right_texture}/10")
-            st.write(f"🧊 **Pores:** {right_pores}/10")
+            st.subheader(" Right Cheek")
+            st.write(f" **Texture:** {right_texture}/10")
+            st.write(f" **Pores:** {right_pores}/10")
 
